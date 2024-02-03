@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Dont forget to change name to Bondi -->
+    <title>Bondy</title>
+    <!--CSS & Bootstrap Css Files -->
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Media/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <svg class="navbar-toggler-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                </svg>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link py-2 px-lg-2 active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-2 px-lg-2" href="#feature">Features</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link py-2 px-lg-2" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-2 px-lg-2" href="#blogs">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-2 px-lg-2" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <span class=" d-none d-lg-block px-2">|</span>
+                <div class="search mx-3 px-2 d-none d-lg-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                    </svg>
+                </div>
+
+                <a class="btn log px-4 py-2 fs-6 rounded-5 bg-danger my-md-2" type="button" href="#">login</a>
+            </div>
+        </div>
+    </nav>
+    <!-- End NavBar -->
+
+    <!-- Landing page -->
+    <section class="landing d-flex justify-content-center align-items-center flex-column" id="home">
+        <h2 class="text-capitalize text-white fw-b fs-1 mb-2">taste the creativity</h2>
+        <small class="text-capitalize text-white-50 fs-6 mb-5">we make awesome graphic and web design</small>
+        <button class="btn btn-danger py-2 px-3 rounded-5 text-warning">Get Started</button>
+    </section>
+    <!-- End Landing page -->
+
+    <!-- Feature -->
+    <div class="feature" id="feature">
+        <div class="container">
+            <div class="type-graphy d-flex flex-column align-items-center justify-content-center my-5">
+                <img class="my-3 pt-5 pb-3" src="Media/title.png" alt="Title">
+                <h2 class="text-capitalize">we are good at</h2>
+                <small class="text-uppercase text-black-50">some of these stuff under</small>
+                <span class="mt-3" style="width: 100px; height: 2px; background-color: var(--green-color);"></span>
+            </div>
+
+            <div class="row cards">
+                <div class="col-lg-4 col-md mb-3">
+                    <div class="card border-0 text-center">
+                        <div class="icons d-flex flex-column justify-content-start align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                <path
+                                    d="M160 64c0-11.8-6.5-22.6-16.9-28.2s-23-5-32.8 1.6l-96 64C-.5 111.2-4.4 131 5.4 145.8s29.7 18.7 44.4 8.9L96 123.8V416H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96 96c17.7 0 32-14.3 32-32s-14.3-32-32-32H160V64z" />
+                            </svg>
+
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z" />
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title text-warning text-uppercase">graphic design</h3>
+                            <p class="text-black-50 text-center">
+                                Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget
+                                consectetur
+                                sed, convallis at tellus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md mb-3">
+                    <div class="card border-0 text-center">
+                        <div class="icons d-flex flex-column justify-content-start align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path
+                                    d="M142.9 96c-21.5 0-42.2 8.5-57.4 23.8L54.6 150.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L40.2 74.5C67.5 47.3 104.4 32 142.9 32C223 32 288 97 288 177.1c0 38.5-15.3 75.4-42.5 102.6L109.3 416H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9L200.2 234.5c15.2-15.2 23.8-35.9 23.8-57.4c0-44.8-36.3-81.1-81.1-81.1z" />
+                            </svg>
+
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path
+                                    d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64H240l-10.7 32H160c-17.7 0-32 14.3-32 32s14.3 32 32 32H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H346.7L336 416H512c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM512 64V352H64V64H512z" />
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title text-warning text-uppercase">graphic design</h3>
+                            <p class="text-black-50 text-center">
+                                Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget
+                                consectetur
+                                sed, convallis at tellus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md mb-3">
+                    <div class="card border-0 text-center">
+                        <div class="icons d-flex flex-column justify-content-start align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path
+                                    d="M0 64C0 46.3 14.3 32 32 32H272c13.2 0 25 8.1 29.8 20.4s1.5 26.3-8.2 35.2L162.3 208H184c75.1 0 136 60.9 136 136s-60.9 136-136 136H105.4C63 480 24.2 456 5.3 418.1l-1.9-3.8c-7.9-15.8-1.5-35 14.3-42.9s35-1.5 42.9 14.3l1.9 3.8c8.1 16.3 24.8 26.5 42.9 26.5H184c39.8 0 72-32.2 72-72s-32.2-72-72-72H80c-13.2 0-25-8.1-29.8-20.4s-1.5-26.3 8.2-35.2L189.7 96H32C14.3 96 0 81.7 0 64z" />
+                            </svg>
+
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title text-warning text-uppercase">graphic design</h3>
+                            <p class="text-black-50 text-center">
+                                Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget
+                                consectetur
+                                sed, convallis at tellus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Feature -->
+
+    <!-- Services -->
+    <div class="services " id="services">
+        <div class="container text-center pb-5">
+            <div class="type-graphy d-flex flex-column align-items-center justify-content-center my-5">
+                <img class="my-3 pt-5 pb-3" src="Media/title.png" alt="Title">
+                <h2 class="text-capitalize">we make this</h2>
+                <small class="text-uppercase text-black-50">prepare to be amazed</small>
+                <span class="mt-3" style="width: 100px; height: 2px; background-color: var(--green-color);"></span>
+            </div>
+
+            <ul class="suggestions d-flex flex-wrap justify-content-center align-items-center my-3">
+                <li class="text-capitalize px-3 py-2 rounded-5 text-warning  bg-danger"
+                    style="cursor: pointer; font-weight: 500;">
+                    all</li>
+                <li class="text-capitalize px-3" style="cursor: pointer; font-weight: 500;">design</li>
+                <li class="text-capitalize px-3" style="cursor: pointer; font-weight: 500;">App</li>
+                <li class="text-capitalize px-3" style="cursor: pointer; font-weight: 500;">code</li>
+                <li class="text-capitalize px-3" style="cursor: pointer; font-weight: 500;">Photo</li>
+            </ul>
+
+            <div class="row align-items-center">
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="box text-center bg-white p-1 position-relative overflow-hidden">
+                        <img class="img-fluid" src="Media/work-01.jpg" alt="App">
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="box text-center bg-white p-1 position-relative overflow-hidden">
+                        <img class="img-fluid" src="Media/work-02.jpg" alt="App">
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="box text-center bg-white p-1 position-relative overflow-hidden">
+                        <img class="img-fluid" src="Media/work-03.jpg" alt="App">
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="box text-center bg-white p-1 position-relative overflow-hidden">
+                        <img class="img-fluid" src="Media/work-04.jpg" alt="App">
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="box text-center bg-white p-1 position-relative overflow-hidden">
+                        <img class="img-fluid" src="Media/work-05.jpg" alt="App">
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="box text-center bg-white p-1 position-relative overflow-hidden">
+                        <img class="img-fluid" src="Media/work-06.jpg" alt="App">
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="box text-center bg-white p-1 position-relative overflow-hidden">
+                        <img class="img-fluid" src="Media/work-07.jpg" alt="App">
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="box text-center bg-white p-1 position-relative overflow-hidden">
+                        <img class="img-fluid" src="Media/work-08.jpg" alt="App">
+                    </div>
+                </div>
+
+                <div class="collapse col-sm-6 col-md-4 col-lg-3 mb-3" id="collapseID">
+                    <div class="box text-center bg-white p-1 position-relative overflow-hidden">
+                        <img class="img-fluid" src="Media/work-01.jpg" alt="App">
+                    </div>
+                </div>
+
+                <div class="collapse col-sm-6 col-md-4 col-lg-3 mb-3" id="collapseID">
+                    <div class="box text-center bg-white p-1 position-relative overflow-hidden">
+                        <img class="img-fluid" src="Media/work-02.jpg" alt="App">
+                    </div>
+                </div>
+
+                <div class="collapse col-sm-6 col-md-4 col-lg-3 mb-3" id="collapseID">
+                    <div class="box text-center bg-white p-1 position-relative overflow-hidden">
+                        <img class="img-fluid" src="Media/work-03.jpg" alt="App">
+                    </div>
+                </div>
+
+                <div class="collapse col-sm-6 col-md-4 col-lg-3 mb-3" id="collapseID">
+                    <div class="box text-center bg-white p-1 position-relative overflow-hidden">
+                        <img class="img-fluid" src="Media/work-04.jpg" alt="App">
+                    </div>
+                </div>
+
+            </div>
+
+            <a class="btn btn-danger text-warning text-capitalize rounded-5 my-2 py-1 px-3 " data-bs-toggle="collapse"
+                href="#collapseID" role="button" aria-expanded="false">see
+                more
+            </a>
+        </div>
+    </div>
+    <!-- End Services -->
+
+    <!-- Stuff -->
+    <div class="stuff">
+        <div class="container">
+            <div class="type-graphy d-flex flex-column align-items-center justify-content-center text-center my-lg-3">
+                <img class="my-3 pt-5 pb-3" src="Media/title.png" alt="Title">
+                <h2 class="text-capitalize">some stuff about us</h2>
+                <small class="text-uppercase text-black-50">the greate team</small>
+                <span class="mt-3" style="width: 100px; height: 2px; background-color: var(--green-color);"></span>
+                <p class="my-4 text-black-50 px-3 text-wrap" style="max-width: 40rem;">donec ruturm cnogue leo eget
+                    malesuada.
+                    mauris
+                    blandit aliquet elit, eget
+                    tincidunt
+                    nibh pulvinar.
+                    pellentesque in ipsum id orci porta dapibus. proin eget tortor risus. donec sollicitudin molestie
+                    malesuada.
+                </p>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-xs-start">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <div class="card-title fw-b fs-3">Retina Design</div>
+                            <p class="card-text text-black-50">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptatibus quam
+                                facere distinctio omnis out.
+                                <br><br>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa recusandae sit voluptates
+                                harum iste porro? Hic est iste, doloremque rerum neque porro nisi. Obcaecati laboriosam
+                                porro impedit incidunt amet-in.
+                            </p>
+                            <button class="btn btn-danger text-warning rounded-5">order me one</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <img class="img-fluid" src="Media/laptop.png" alt="Bondi laptop">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Stuff -->
+
+    <!-- Meeting -->
+    <div class="meet bg-light">
+        <div class="container py-5">
+            <div
+                class="type-graphy d-flex flex-column align-items-center justify-content-center text-center my-lg-3 pt-3 pb-3">
+                <h2 class="text-capitalize text-warning fw-bold">meet the team</h2>
+                <p class="my-2 text-black-50 px-3 lh-base">donec ruturm cnogue leo eget
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus totam dolore necessitatibus
+                    odit nam iusto quae, aspernatur quaerat!
+                </p>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3  mb-4 ">
+                    <div class="card border-0 rounded-0">
+                        <img class="card-img rounded-0" src="Media/team-1.png" alt="">
+                        <div class="card-body text-center pt-0 px-0">
+                            <h4 class="card-title text-white text-capitalize py-3 fs-3">luke skywalker
+                            </h4>
+                            <p class="card-text text-black-50" style="padding: 16px 16px 0;"><q>i don't
+                                    undrestand how we got by those troops. i thought we were
+                                    dead.</q></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3  mb-4 ">
+                    <div class="card border-0 rounded-0">
+                        <img class="card-img rounded-0" src="Media/team-2.png" alt="">
+                        <div class="card-body text-center pt-0 px-0">
+                            <h4 class="card-title text-white text-capitalize py-3 fs-3">luke skywalker
+                            </h4>
+                            <p class="card-text text-black-50" style="padding: 16px 16px 0;"><q>i don't
+                                    undrestand how we got by those troops. i thought we were
+                                    dead.</q></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3  mb-4 ">
+                    <div class="card border-0 rounded-0">
+                        <img class="card-img rounded-0" src="Media/team-3.png" alt="">
+                        <div class="card-body text-center pt-0 px-0">
+                            <h4 class="card-title text-white text-capitalize py-3 fs-3">luke skywalker
+                            </h4>
+                            <p class="card-text text-black-50" style="padding: 16px 16px 0;"><q>i don't
+                                    undrestand how we got by those troops. i thought we were
+                                    dead.</q></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3  mb-4 ">
+                    <div class="card border-0 rounded-0">
+                        <img class="card-img rounded-0" src="Media/team-4.png" alt="">
+                        <div class="card-body text-center pt-0 px-0">
+                            <h4 class="card-title text-white text-capitalize py-3 fs-3">luke skywalker
+                            </h4>
+                            <p class="card-text text-black-50" style="padding: 16px 16px 0;"><q>i don't
+                                    undrestand how we got by those troops. i thought we were
+                                    dead.</q></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Meeting -->
+
+    <!-- Techs -->
+    <div class="tech">
+        <div class="container py-5">
+            <div class="row py-4">
+                <div class="col-sm-6 col-md-4 col-lg d-flex justify-content-center my-3">
+                    <img class="img-fluid" src="Media/tech-3.png" alt="tech-pictur">
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg d-flex justify-content-center my-3">
+                    <img class="img-fluid" src="Media/tech-1 (1).png" alt="tech-pictur">
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg d-flex justify-content-center my-3">
+                    <img class="img-fluid" src="Media/tech-4.png" alt="tech-pictur">
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg d-flex justify-content-center my-3">
+                    <img class="img-fluid" src="Media/tech-2 (1).png" alt="tech-pictur">
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg d-flex justify-content-center my-3">
+                    <img class="img-fluid" src="Media/tech-3.png" alt="tech-pictur">
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg d-flex justify-content-center my-3">
+                    <img class="img-fluid" src="Media/tech-4.png" alt="tech-pictur">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- EndTechs -->
+
+    <!-- Project -->
+    <div class="project">
+        <div class="container py-5">
+            <div class="type-graphy d-flex flex-column align-items-center justify-content-center text-center my-lg-3">
+                <h2 class="text-capitalize">start your project now</h2>
+                <p class="text-white-50 mb-4">Leave your description and we start the engine. Don't
+                    worry,
+                    you can cancel anytime.
+                </p>
+                <button class="btn btn-danger text-warning rounded-5 py-2 px-3 text-uppercase">start project</button>
+            </div>
+        </div>
+    </div>
+    <!-- End Project -->
+
+    <!-- Blogs -->
+    <div class="blogs" id="blogs">
+        <div class="container text-center">
+            <div class=" type-graphy d-flex flex-column align-items-center justify-content-center text-center my-lg-3">
+                <img class="my-3 pt-5 pb-3" src="Media/title.png" alt="Title">
+                <h2 class="text-capitalize">read our blogs</h2>
+                <small class="text-uppercase text-black-50">new stories</small>
+                <span class="mt-3" style="width: 100px; height: 2px; background-color: var(--green-color);"></span>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                        <img class="card-img" src="Media/blog-1.jpg" alt="blog-pictures">
+                        <div class="card-body text-start">
+                            <small class="card-text text-black-50">Jan 29, 2024</small>
+                            <h4 class="card-title">some awesome blog title here</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                        <img class="card-img" src="Media/blog-2.jpg" alt="blog-pictures">
+                        <div class="card-body text-start">
+                            <small class="card-text text-black-50">Jan 29, 2024</small>
+                            <h4 class="card-title">some awesome blog title here</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                        <img class="card-img" src="Media/blog-3.jpg" alt="blog-pictures">
+                        <div class="card-body text-start">
+                            <small class="card-text text-black-50">Jan 29, 2024</small>
+                            <h4 class="card-title">some awesome blog title here</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="collapse col-md-6 col-lg-4 mb-3" id="blog-collapseID">
+                    <div class="card">
+                        <img class="card-img" src="Media/blog-2.jpg" alt="blog-pictures">
+                        <div class="card-body text-start">
+                            <small class="card-text text-black-50">Jan 29, 2024</small>
+                            <h4 class="card-title">some awesome blog title here</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse col-md-6 col-lg-4 mb-3" id="blog-collapseID">
+                    <div class="card">
+                        <img class="card-img" src="Media/blog-3.jpg" alt="blog-pictures">
+                        <div class="card-body text-start">
+                            <small class="card-text text-black-50">Jan 29, 2024</small>
+                            <h4 class="card-title">some awesome blog title here</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse col-md-6 col-lg-4 mb-3" id="blog-collapseID">
+                    <div class="card">
+                        <img class="card-img" src="Media/blog-1.jpg" alt="blog-pictures">
+                        <div class="card-body text-start">
+                            <small class="card-text text-black-50">Jan 29, 2024</small>
+                            <h4 class="card-title">some awesome blog title here</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <a href="#blog-collapseID" href="#contact" class="btn btn-danger text-warning text-uppercase rounded-5 mb-4"
+                data-bs-toggle="collapse" aria-expanded="false" role="button">more
+                stories
+            </a>
+
+        </div>
+    </div>
+    <!-- End Blogs -->
+
+    <!-- Subscribe -->
+    <div class="sub bg-warning" id="contact">
+        <div class="container py-5">
+            <div class="row">
+                <h4 class="col-md-6 col-lg-4 mb-sm-0 align-self-center text-capitalize">subscribe to our newsletter:
+                </h4>
+
+                <div class="col-md-6 col-lg-6 my-sm-1">
+                    <input
+                        class="form-control bg-warning border-top-0 border-end-0 border-start-0 border border-2 border-white  my-3 "
+                        type="text" placeholder="Enter Email Address">
+                </div>
+
+                <div class="col-md-6 col-lg-2 mt-sm-2 mt-md-3">
+                    <a href="#contact" class="btn btn-dark text-warning text-capitalize rounded-5"
+                        role="button">Subscribe
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Subscribe -->
+
+    <footer class="py-5 text-center text-sm-start">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <img class="img-fluid mb-4" src="Media/logo.png" alt="logo">
+
+                    <p class="text-white-50 lh-base mb-5">Pellentesque in ipsum id orci porta dapibus. Vivamus magna
+                        justo,
+                        lacinia
+                        eget consectetur sed, convallis at tellus.
+                    </p>
+
+                    <p class="text-white-50 lh-base">Created By <span>Graphberry</span>
+                        &copy; 2022 - <span>Bondi Inc</span>
+                    </p>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-2 d-flex flex-column">
+                    <h4 class="mb-4 text-white">Links</h4>
+                    <a class="text-white-50 mb-2" href="#home">Home</a>
+                    <a class="text-white-50 mb-2" href="#feature">Features</a>
+                    <a class="text-white-50 mb-2" href="#services">Services</a>
+                    <a class="text-white-50 mb-2" href="#blogs">Blogs</a>
+                    <a class="text-white-50 mb-2" href="#contact">Contact</a>
+                </div>
+
+                <ul class="col-sm-6 col-md-4 col-lg-2 ps-0">
+                    <h4 class="mb-4 text-white">About Us</h4>
+                    <li class="text-white-50 mb-2">Sign In</li>
+                    <li class="text-white-50 mb-2">Register</li>
+                    <li class="text-white-50 mb-2">About Us</li>
+                    <li class="text-white-50 mb-2">Blog</li>
+                </ul>
+
+                <div class="col-sm-6 col-md-4 col-lg-4 med">
+                    <h4 class="mb-4 text-white">Contact Us</h4>
+                    <p class="text-white-50 lh-base">Get in touch with us via mail phone.We are waiting for your call or
+                        message
+                    </p>
+
+                    <a class="btn btn-danger text-warning w-100 rounded-5 my-3" role="button"
+                        href="#">graphberry@gmail.com
+                    </a>
+
+                    <ul class="d-flex justify-content-start align-items-center ps-0 mt-4 gap-3">
+                        <li class="p-2 rounded-circle ">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="#FFF"
+                                        d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="p-2 rounded-circle ">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="#FFF"
+                                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="p-2 rounded-circle ">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="#FFF"
+                                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="p-2 rounded-circle ">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path fill="#FFF"
+                                        d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Files -->
+    <script src=" JS/popper.min.js">
+    </script>
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <script src="JS/bootstrap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav :where(.navbar-nav) a {
+    color: var(--section-color) !important;
+}
+
+
+nav {
+    height: 72px;
+    background-color: var(--dark-color);
+}
+
+nav .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+nav button[aria-expanded=false] {
+    border: 2px solid var(--section-color);
+
+    & svg {
+        & path {
+            fill: var(--section-color);
+        }
+    }
+}
+
+nav button[aria-expanded=true] {
+    border: 2px solid var(--green-color);
+
+    & svg {
+        & path {
+            fill: var(--section-color);
+        }
+    }
+}
+
+nav .nav-link:focus,
+nav .nav-link:hover,
+nav .nav-link.active {
+    color: var(--green-color) !important;
+}
+
+.collapse span {
+    color: var(--green-color);
+}
+
+.search svg {
+    height: 20px;
+    width: 20px;
+
+    & path {
+        fill: var(--green-color);
+    }
+}
+
+.log {
+    color: var(--yellow-color);
+
+}
+
+/* End Navbar */
+
+/* Landing Section */
+section {
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
+
+/* End Landing Section */
+
+/* Feature */
+.feature .cards :where(.icons) {
+    position: relative;
+
+    & svg {
+        width: 15rem;
+        height: 15rem;
+
+        & path {
+            fill: var(--section-color);
+        }
+    }
+
+    & :nth-child(2 of svg) {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        bottom: 0;
+
+        & path {
+            fill: var(--green-color);
+        }
+    }
+}
+
+/* End Feature */
+
+/* Services */
+.services {
+    background-color: var(--section-color);
+}
+
+.services ul li:not(:first-of-type):hover {
+    color: var(--red-color);
+}
+
+.services .row :where(.box)::before {
+    content: 'Application';
+    background-color: rgb(51 209 204 / 76%);
+    position: absolute;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    opacity: 1;
+    left: -105%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--section-color);
+    font-size: 2em;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.services .row :where(.box):hover::before {
+    left: 4px;
+}
+
+/* End Services */
+
+/* Stuff */
+.stuff .row :where(.card) button {
+    width: fit-content;
+}
+
+/* End Stuff */
+
+/* Meet */
+.meet .row :where(.card) h4 {
+    background-color: var(--green-color);
+}
+
+/* End Meet */
+
+/* Project */
+.project {
+    background-color: var(--dark-color);
+    color: #fff;
+
+    & p {
+        font-weight: 500;
+    }
+}
+
+/* End Project */
+
+/* Subscrip */
+.sub input::placeholder {
+    color: #fff;
+}
+
+/* End Subscrip */
+
+footer {
+    background-color: var(--dark-color);
+}
+
+footer :where(.row) p {
+    span {
+        color: var(--green-color);
+    }
+
+    :nth-child(2 of span) {
+        color: var(--yellow-color);
+    }
+}
+
+footer :where(.med) ul {
+    li {
+        background-color: #1877f2;
+    }
+
+    & :nth-child(2 of li) {
+        background-color: #1da1f2;
+    }
+
+    & :nth-child(3 of li) {
+        background-color: #0a66c2;
+    }
+
+    & :nth-child(4 of li) {
+        background-color: #ff0000;
+    }
+}
+
+footer .med svg {
+    width: 2rem;
+    height: 2rem;
+}
